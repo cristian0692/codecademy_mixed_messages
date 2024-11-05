@@ -17,6 +17,8 @@ const randomMessageGenerator = {
         selectedSentence[actorPlaceholder] = selectedActor;
         selectedSentence[fruitPlaceholder] = selectedFruit;
 
-        return selectedSentence;
+        return selectedSentence.join(" ");
     }
 }
+
+console.log(randomMessageGenerator.generateRanomdMessage());
